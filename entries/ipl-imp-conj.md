@@ -18,7 +18,7 @@ type_theory:
   normalization: strong
   equality_decidable: yes
 algebra:
-  name: Brouwerian semilattices (implicative semilattices)
+  name: Brouwerian semilattices (implicative semilattices, cartesian lineales)
   CAL: TODO            # CAL entry for Brouwerian semilattices
   kind: variety
   algebraizable: yes
