@@ -17,7 +17,7 @@ type_theory:
   normalization: strong
   equality_decidable: yes
 algebra:
-  name: Brouwerian semilattices (implicative semilattices)
+  name: Brouwerian semilattices (implicative semilattices, cartesian lineales)
   CAL: TODO            # CAL entry for Brouwerian semilattices
   kind: variety
   algebraizable: yes
@@ -84,7 +84,7 @@ where ∧E has two versions, one for each conjunct. The sequent calculus LJ rest
 The Curry–Howard partner of this fragment is the simply typed λ-calculus with function types, binary products and a unit type. Terms are
 
 $$
-M ::= x \mid \lambda x{:}A.\,M \mid M\,N \mid \langle M, N\rangle \mid \pi_1 M \mid \pi_2 M \mid \langle\rangle
+M ::= x \mid \lambda x{:}A.M \mid M\,N \mid \langle M, N\rangle \mid \pi_1 M \mid \pi_2 M \mid \langle\rangle
 $$
 
 and each typing rule is the corresponding natural-deduction rule with terms attached, so a derivation of x₁:A₁, …, xₙ:Aₙ ⊢ M : B is exactly a proof of B from A₁, …, Aₙ. The equations are β and η for each type former:
