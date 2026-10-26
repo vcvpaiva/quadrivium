@@ -90,7 +90,7 @@ $$
 and each typing rule is the corresponding natural-deduction rule with terms attached, so a derivation of x₁:A₁, …, xₙ:Aₙ ⊢ M : B is exactly a proof of B from A₁, …, Aₙ. The equations are β and η for each type former:
 
 $$
-(\lambda x.M)\,N = M[N/x] \qquad \pi_i\langle M_1, M_2\rangle = M_i \qquad \lambda x.\,M\,x = M \ (x \notin \mathrm{FV}(M)) \qquad \langle \pi_1 M, \pi_2 M\rangle = M \qquad M = \langle\rangle \ (M : 1)
+(\lambda x.M).N = M[N/x] \qquad \pi_i\langle M_1, M_2\rangle = M_i \qquad \lambda x.M\,x = M \ (x \notin \mathrm{FV}(M)) \qquad \langle \pi_1 M, \pi_2 M\rangle = M \qquad M = \langle\rangle \ (M : 1)
 $$
 
 Reading β from left to right gives a reduction that is strongly normalizing, by Tait's reducibility method, and confluent. A β-redex is a detour in a proof, an introduction immediately followed by an elimination, and β-reduction is Prawitz's proof normalization. Normal forms have the subformula property without any further conversions. Equality modulo βη is decided by computing β-normal η-long forms.
