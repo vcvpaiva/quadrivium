@@ -7,7 +7,7 @@ Ela propôs começar com sistemas já estabelecidos como álgebras de Heyting, c
 forma sistemática para identificar critérios estruturais para quando a correspondência Curry-Howard existe. 
 
 A equipe discutiu usar dois bancos de dados existentes:
-* o de Peter Jipsen para álgebras [CAL](github.com/jipsen/Algebras-and-Logics/blob/main/files/fl-algebras.md) e
+* o de Peter Jipsen para álgebras [CAL](https://github.com/jipsen/Algebras-and-Logics/tree/main) e
 * o [EPS](https://proofsystem.github.io/Encyclopedia/) (Enciclopédia de Sistemas de Prova) para sistemas de prova 
 como base para suas investigações. 
 Willian e outros colaboradores expressaram interesse em participar do projeto, com Willian criando um grupo no WhatsApp para facilitar a comunicação contínua.
