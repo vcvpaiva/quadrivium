@@ -12,19 +12,22 @@ como base para suas investigações.
 Willian e outros colaboradores expressaram interesse em participar do projeto, com Willian criando um grupo no WhatsApp para facilitar a comunicação contínua.
 
 Próximas etapas:
-Valeria
-- reescrever os slides corrigindo os erros e adicionando os links dos dois bancos de dados (CAL do Peter Jipsen e Enciclopédia de Sistemas de Prova)
-- ~~criar uma template inicial preliminar para a quádrupla (sistema lógico, teoria de tipos, versão categórica e versão algébrica)~~
-- criar a entrada para o sistema LP (Lambek with Permutation)
-- ~~enviar o vídeo da gravação e os links no grupo de WhatsApp~~
-- ~~enviar o resumo da conversa gerado pelo Zoom Companion no grupo de WhatsApp~~
-Willian
-- criar um grupo de WhatsApp para o projeto e incluir Valeria e os demais colaboradores
-- compartilhar o link do grupo de WhatsApp com outras pessoas interessadas em colaborar
-- explorar o banco de dados de Peter Jipsen para identificar álgebras interessantes para iniciar o trabalho
-Colaboração
-- Valeria e Willian: se encontrar em duas ou três semanas para discutir a template e avançar nos sistemas (começando por Heyting algebras/lógica intuicionista e
+* Valeria
+  - reescrever os slides corrigindo os erros e adicionando os links dos dois bancos de dados (CAL do Peter Jipsen e Enciclopédia de Sistemas de Prova)
+  - ~~criar uma template inicial preliminar para a quádrupla (sistema lógico, teoria de tipos, versão categórica e versão algébrica)~~
+  - criar a entrada para o sistema LP (Lambek with Permutation)
+  - ~~enviar o vídeo da gravação e os links no grupo de WhatsApp~~
+  - ~~enviar o resumo da conversa gerado pelo Zoom Companion no grupo de WhatsApp~~
+  
+* Willian
+  - criar um grupo de WhatsApp para o projeto e incluir Valeria e os demais colaboradores
+  - compartilhar o link do grupo de WhatsApp com outras pessoas interessadas em colaborar
+  - explorar o banco de dados de Peter Jipsen para identificar álgebras interessantes para iniciar o trabalho
+  
+* Colaboração
+  - Valeria e Willian: se encontrar em duas ou três semanas para discutir a template e avançar nos sistemas (começando por Heyting algebras/lógica intuicionista e
   depois Lp ou lógica linear intuicionista)
+  
 Resumo
 
 Valeria apresentou um projeto para criar um banco de dados de correspondências de Curry Howard que conectará álgebras, categorias e lógicas. 
