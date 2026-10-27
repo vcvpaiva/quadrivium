@@ -3,8 +3,7 @@
 Recapitulação rápida (26 Out 2026)
 
 Valeria apresentou um projeto colaborativo para criar um banco de dados de correspondências de Curry-Howard, conectando lógicas, teorias de tipos e categorias. 
-Ela propôs começar com sistemas já estabelecidos como álgebras de Heyting, categorias cartesianamente fechadas e sistemas de lógica intuicionista, trabalhando de 
-forma sistemática para identificar critérios estruturais para quando a correspondência Curry-Howard existe. 
+Ela propôs começar com sistemas já estabelecidos como álgebras de Heyting, categorias cartesianamente fechadas, o lambda-cálculo tipado simples, e sub-sistemas de lógica intuicionista, trabalhando de forma sistemática para identificar critérios estruturais para quando a correspondência Curry-Howard existe. 
 
 A equipe discutiu usar dois bancos de dados existentes:
 * o de Peter Jipsen para álgebras [CAL](https://github.com/jipsen/Algebras-and-Logics/tree/main) e
