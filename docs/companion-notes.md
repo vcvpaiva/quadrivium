@@ -14,10 +14,10 @@ Willian e outros colaboradores expressaram interesse em participar do projeto, c
 Próximas etapas:
 Valeria
 - reescrever os slides corrigindo os erros e adicionando os links dos dois bancos de dados (CAL do Peter Jipsen e Enciclopédia de Sistemas de Prova)
-- criar uma template inicial preliminar para a quádrupla (sistema lógico, teoria de tipos, versão categórica e versão algébrica) para o sistema LP
- (Lambek with Permutation)
-- enviar o vídeo da gravação e os links no grupo de WhatsApp
-- enviar o resumo da conversa gerado pelo Zoom Companion no grupo de WhatsApp
+- ~~criar uma template inicial preliminar para a quádrupla (sistema lógico, teoria de tipos, versão categórica e versão algébrica)~~
+- criar a entrada para o sistema LP (Lambek with Permutation)
+- ~~enviar o vídeo da gravação e os links no grupo de WhatsApp~~
+- ~~enviar o resumo da conversa gerado pelo Zoom Companion no grupo de WhatsApp~~
 Willian
 - criar um grupo de WhatsApp para o projeto e incluir Valeria e os demais colaboradores
 - compartilhar o link do grupo de WhatsApp com outras pessoas interessadas em colaborar
