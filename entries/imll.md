@@ -97,7 +97,9 @@ Since no variable is ever duplicated, each β-step strictly decreases the size o
 
 The posetal models of IMLL are the lineales of Hyland and de Paiva [@hylanddepaiva1991]. A lineale is a partially ordered set with a commutative monoid structure (⊗, I) that is monotone, and a binary operation ⊸ such that a ⊗ b ≤ c holds exactly when a ≤ b ⊸ c. Lineales are the same thing as commutative residuated partially ordered monoids. A lineale whose tensor is the meet and whose unit is the top element is a Brouwerian semilattice, which is how this entry sits under the first one.
 
-A formula A is provable in IMLL iff I ≤ A under every valuation in every lineale, and the Lindenbaum–Tarski construction, ordering formulas by provable linear implication, gives the free lineale on the atoms. Whether the fragment is algebraizable in the sense of Blok and Pigozzi [@blokpigozzi1989] is less clear than for IPL. Without meets the order of a lineale is not definable by equations in the signature ⊗, ⊸, I, so the natural semantics is a class of ordered structures rather than a variety, and the answer depends on which consequence relation of the logic one chooses to algebraize.
+A formula A is provable in IMLL iff I ≤ A under every valuation in every lineale, and the Lindenbaum–Tarski construction, ordering formulas by provable linear implication, gives the free lineale on the atoms. 
+
+Under the original definition of Blok and Pigozzi [@blokpigozzi1989] the fragment is not algebraizable: without meets the order of a lineale is not definable by equations in the signature ⊗, ⊸, I, so the natural semantics is a class of ordered structures rather than a quasivariety. Algebraic logicians regard this as a limitation of the definition rather than of the logic, and which notion of algebraizability is the right one for linear logic is open.
 
 ## Category
 
