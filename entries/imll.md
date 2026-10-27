@@ -95,7 +95,7 @@ Since no variable is ever duplicated, each β-step strictly decreases the size o
 
 ## Algebra
 
-The posetal models of IMLL are the lineales of Hyland and de Paiva [@hylanddepaiva1991]. A lineale is a partially ordered set with a commutative monoid structure (⊗, I) that is monotone, and a binary operation ⊸ such that a ⊗ b ≤ c holds exactly when a ≤ b ⊸ c. Lineales are the same thing as commutative residuated partially ordered monoids. A lineale whose tensor is the meet and whose unit is the top element is a Brouwerian semilattice, which is how this entry sits under the first one.
+The posetal models of IMLL are the lineales of Hyland and de Paiva [@hylanddepaiva1991]. A lineale is a partially ordered set with a commutative monoid structure (⊗, I) that is monotone, and a binary operation ⊸ such that a ⊗ b ≤ c holds exactly when a ≤ b ⊸ c. Lineales are the same thing as the commutative residuated partially ordered monoids used by Troelstra as algebraic models of intuitionistic linear logic [@troelstra1992]. A lineale whose tensor is the meet and whose unit is the top element is a Brouwerian semilattice, which is how this entry sits under the first one.
 
 A formula A is provable in IMLL iff I ≤ A under every valuation in every lineale, and the Lindenbaum–Tarski construction, ordering formulas by provable linear implication, gives the free lineale on the atoms. 
 
