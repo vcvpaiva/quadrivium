@@ -91,7 +91,7 @@ $$
 (\mathsf{let}\ M\ \mathsf{be}\ x \otimes y\ \mathsf{in}\ N)\ P = \mathsf{let}\ M\ \mathsf{be}\ x \otimes y\ \mathsf{in}\ (N\ P)
 $$
 
-Since no variable is ever duplicated, each β-step strictly decreases the size of a term, and normalization is much easier to prove here than in the intuitionistic case.
+Since no variable is ever duplicated, each β-step strictly decreases the size of a term, so for the fragment with linear implication alone normalization terminates in a number of steps bounded by the size of the term. This simple bound does not survive the addition of tensors: the commuting conversions for ⊗ and I do not decrease size, and Maria Emilia Maietti, Eike Ritter and de Paiva showed that bounding normalization becomes much harder once tensors are present [@maiettietal2002].
 
 ## Algebra
 
