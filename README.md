@@ -1,6 +1,6 @@
 # Quadrivium: a Curry–Howard Atlas
 
-![cartoon 4 qudrivium]()
+![cartoon 4 qudrivium](https://github.com/vcvpaiva/quadrivium/blob/main/The%20Curry%E2%80%93Howard%20correspondence.png)
 
 
 The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
