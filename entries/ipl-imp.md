@@ -38,7 +38,7 @@ The smallest fragment of IPL with a full Curry–Howard correspondence has impli
 
 ## Logic
 
-The implicational fragment has the smallest language in the atlas, a single connective, and its rules are those of natural deduction for implication together with the three structural rules. Formulas are given by
+The implicational fragment of intuitionistic propositional logic has implication as its only connective, and its logical rules are those of natural deduction for implication. Formulas are given by
 
 $$
 A, B ::= p \mid A \to B
