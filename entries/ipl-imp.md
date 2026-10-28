@@ -67,7 +67,7 @@ $$
 \end{prooftree}
 $$
 
-The [structural rules]() of exchange, weakening, and contraction are all present.
+The [structural rules](https://github.com/vcvpaiva/quadrivium/blob/main/INTRODUCTION.md) of exchange, weakening, and contraction are all present.
 
 An equivalent Hilbert-style presentation has modus ponens as its only rule and two axiom schemes,
 
