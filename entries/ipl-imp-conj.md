@@ -34,7 +34,7 @@ correspondence:
 
 # Implication–conjunction fragment of intuitionistic propositional logic
 
-The fragment of intuitionistic propositional logic with only implication, conjunction and truth is the starting point of the atlas, because it is the case in which all four facets match with no extra machinery. Its proofs are the terms of the simply typed λ-calculus with products, its algebras are the Brouwerian semilattices, and its categories are the cartesian closed categories. Adding disjunction and falsity, as in the entry for full IPL, already requires commuting conversions and makes equality of proofs hard to decide; nothing of the kind happens here.
+The fragment of intuitionistic propositional logic with only implication, conjunction and truth is one of the starting points of the atlas, because it is the case in which all four facets match with no extra machinery. Its proofs are the terms of the simply typed λ-calculus with products, its algebras are the Brouwerian semilattices, and its categories are the cartesian closed categories. Adding disjunction and falsity, as in the entry for full IPL, will require commuting conversions and make equality of proofs hard to decide.
 
 ## Logic
 
