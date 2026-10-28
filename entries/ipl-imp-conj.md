@@ -38,47 +38,80 @@ The fragment of intuitionistic propositional logic with only implication, conjun
 
 ## Logic
 
-Formulas are built from propositional atoms with the connectives → and ∧ and the constant ⊤. In natural deduction [@prawitz1965] each connective has introduction and elimination rules:
+This fragment of intuitionistic propositional logic has implication, conjunction and truth, and its rules are those of natural deduction for these connectives together with the three structural rules. Formulas are given by
+
+$$
+A, B ::= p \mid A \to B \mid A \land B \mid \top
+$$
+
+where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the logical rules are
 
 $$
 \begin{prooftree}
-\AxiomC{$[A]$}
-\noLine
-\UnaryInfC{$\vdots$}
-\noLine
-\UnaryInfC{$B$}
+\AxiomC{}
+\RightLabel{$\mathrm{Ax}$}
+\UnaryInfC{$A \vdash A$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma, A \vdash B$}
 \RightLabel{$\to\mathrm{I}$}
-\UnaryInfC{$A \to B$}
+\UnaryInfC{$\Gamma \vdash A \to B$}
 \end{prooftree}
 \qquad
 \begin{prooftree}
-\AxiomC{$A \to B$}
-\AxiomC{$A$}
+\AxiomC{$\Gamma \vdash A \to B$}
+\AxiomC{$\Delta \vdash A$}
 \RightLabel{$\to\mathrm{E}$}
-\BinaryInfC{$B$}
+\BinaryInfC{$\Gamma, \Delta \vdash B$}
 \end{prooftree}
-\qquad
+$$
+
+$$
 \begin{prooftree}
-\AxiomC{$A$}
-\AxiomC{$B$}
+\AxiomC{$\Gamma \vdash A$}
+\AxiomC{$\Delta \vdash B$}
 \RightLabel{$\land\mathrm{I}$}
-\BinaryInfC{$A \land B$}
+\BinaryInfC{$\Gamma, \Delta \vdash A \land B$}
 \end{prooftree}
 \qquad
 \begin{prooftree}
-\AxiomC{$A_1 \land A_2$}
+\AxiomC{$\Gamma \vdash A_1 \land A_2$}
 \RightLabel{$\land\mathrm{E}_i$}
-\UnaryInfC{$A_i$}
+\UnaryInfC{$\Gamma \vdash A_i$}
 \end{prooftree}
 \qquad
 \begin{prooftree}
 \AxiomC{}
 \RightLabel{$\top\mathrm{I}$}
-\UnaryInfC{$\top$}
+\UnaryInfC{$\vdash \top$}
 \end{prooftree}
 $$
 
-where ∧E has two versions, one for each conjunct. The sequent calculus LJ restricted to these connectives has cut elimination [@gentzen1935], and full IPL is conservative over the fragment, so a formula in →, ∧ and ⊤ is provable here exactly when it is provable in full IPL. All three structural rules are present.
+where ∧E has one version for each i = 1, 2. The structural rules of exchange, weakening and contraction are all present:
+
+$$
+\begin{prooftree}
+\AxiomC{$\Gamma, A, B, \Delta \vdash C$}
+\RightLabel{$\mathrm{Ex}$}
+\UnaryInfC{$\Gamma, B, A, \Delta \vdash C$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma \vdash C$}
+\RightLabel{$\mathrm{W}$}
+\UnaryInfC{$\Gamma, A \vdash C$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma, A, A \vdash C$}
+\RightLabel{$\mathrm{C}$}
+\UnaryInfC{$\Gamma, A \vdash C$}
+\end{prooftree}
+$$
+
+The sequent calculus LJ restricted to these connectives has cut elimination [@gentzen1935]. Full [intuitionistic propositional logic](ipl.md) is conservative over the fragment, so a formula in →, ∧ and ⊤ is provable here exactly when it is provable in IPL.
+
 
 ## Type theory
 
