@@ -38,7 +38,46 @@ The smallest fragment of IPL with a full Curry–Howard correspondence has impli
 
 ## Logic
 
-Formulas are built from propositional atoms with → alone. Natural deduction has the two rules →I and →E of the earlier entries, and the Hilbert-style presentation has modus ponens with the axioms K, A → (B → A), and S, (A → (B → C)) → ((A → B) → (A → C)). Weakening, contraction and exchange are all present, and IPL is conservative over the fragment.
+## Logic
+
+The implicational fragment has the smallest language in the atlas, a single connective, and its rules are those of natural deduction for implication together with the three structural rules. Formulas are given by
+
+$$
+A, B ::= p \mid A \to B
+$$
+
+where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the logical rules are
+
+$$
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\mathrm{Ax}$}
+\UnaryInfC{$A \vdash A$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma, A \vdash B$}
+\RightLabel{$\to\mathrm{I}$}
+\UnaryInfC{$\Gamma \vdash A \to B$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma \vdash A \to B$}
+\AxiomC{$\Delta \vdash A$}
+\RightLabel{$\to\mathrm{E}$}
+\BinaryInfC{$\Gamma, \Delta \vdash B$}
+\end{prooftree}
+$$
+
+The structural rules of exchange, weakening and contraction are all present.
+
+An equivalent Hilbert-style presentation has modus ponens as its only rule and two axiom schemes,
+
+$$
+\mathrm{K}\colon\ A \to (B \to A) \qquad \mathrm{S}\colon\ (A \to (B \to C)) \to ((A \to B) \to (A \to C))
+$$
+
+and the sequent calculus for the fragment has cut elimination. Full [intuitionistic propositional logic](ipl.md) is conservative over the fragment: a formula built from atoms with → alone is provable in IPL exactly when it is provable here.
 
 ## Type theory
 
