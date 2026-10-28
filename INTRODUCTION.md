@@ -2,7 +2,7 @@
 
 The Curry–Howard correspondence is usually stated as a slogan, propositions are types and proofs are programs, but behind the slogan there is a precise mathematical claim. For intuitionistic propositional logic the claim is an old theorem: natural-deduction proofs are in bijection with terms of the simply typed λ-calculus, normalization of proofs is reduction of terms, and both present the free cartesian closed category, whose posetal reflection is the free Heyting algebra. 
 
-Lambek's contribution was the third leg, seeing a deductive system as a category, and the algebraic leg, older than the other three, is the tradition of Lindenbaum–Tarski algebras. The question behind Quadrivium is how much of this picture survives when the logic changes, and the aim of the atlas is to record the answer logic by logic.
+Lambek and Lawver's contribution was the third leg, seeing a deductive system as a category, and the algebraic leg, older than the other three, is the tradition of Lindenbaum–Tarski algebras. The question behind Quadrivium is how much of this picture survives when the logic changes, and the aim of the atlas is to record the answer logic by logic.
 
 ## Proofs as objects
 
