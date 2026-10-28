@@ -1,6 +1,6 @@
 # Quadrivium: a Curry–Howard Atlas
 
-The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. For intuitionistic logic this picture is complete and classical, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
+The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
 
 The atlas builds on two existing open resources. Logics and their proof systems are linked to the [Encyclopedia of Proof Systems](https://proofsystem.github.io/Encyclopedia/) (EPS) started by Bruno Woltzenlogel Paleo, and algebras to Peter Jipsen's [Categories, Algebras and Logics](https://github.com/jipsen/Algebras-and-Logics) database (CAL). Quadrivium adds the type-theoretic and categorical facets and the maps between all four.
 
@@ -10,7 +10,7 @@ Every entry is a Markdown file in `entries/`. It starts with a YAML header holdi
 
 The `correspondence` block in the header records the four maps of the square, between logic and type theory, type theory and category, category and algebra, and logic and algebra. Each map gets a status, such as `isomorphism`, `equivalence`, `posetal-reflection`, `algebraizable`, `partial`, `open` or `none`. An entry may leave facets or maps as `open`; an honest gap is data, and it is exactly what the atlas exists to find.
 
-The first entry is [the implication–conjunction fragment of intuitionistic propositional logic](entries/ipl-imp-conj.md), whose four facets are natural deduction, the simply typed λ-calculus with products, Brouwerian semilattices and cartesian closed categories. It is the reference case against which the others are compared.
+The paradigmatic case is [the implication–conjunction fragment of intuitionistic propositional logic](entries/ipl-imp-conj.md), whose four facets are natural deduction, the simply typed λ-calculus with products, Brouwerian semilattices and cartesian closed categories, and where every map between them is as strong as one could ask. Entries are compared with each other in many directions, by taking fragments or extensions, by adding or dropping structural rules, and by adding or removing units, and the [index](INDEX.md) lists the entries together with these relations.
 
 ## Mathematics and references
 
@@ -26,4 +26,4 @@ Contributions are welcome from students and anyone else interested in logic. The
 
 The content of the atlas is licensed under [Creative Commons Attribution 4.0 International](LICENSE).
 
-The [index](INDEX.md) lists all entries with their four facets.
+
