@@ -25,3 +25,5 @@ Contributions are welcome from students and anyone else interested in logic. The
 ## License
 
 The content of the atlas is licensed under [Creative Commons Attribution 4.0 International](LICENSE).
+
+The [index](INDEX.md) lists all entries with their four facets.
