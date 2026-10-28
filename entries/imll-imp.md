@@ -2,7 +2,7 @@
 id: imll-imp
 name: Implicational fragment of intuitionistic multiplicative linear logic
 short: IMLL(⊸)
-status: full correspondence
+status: full correspondence on three sides; not algebraizable
 bibliography: ../references.bib
 logic:
   name: Implicational fragment of IMLL (BCI logic)
@@ -21,7 +21,7 @@ algebra:
   name: BCI-algebras
   CAL: TODO
   kind: quasivariety
-  algebraizable: TODO
+  algebraizable: no      # Blok–Pigozzi 1989, Theorem 5.9; BCI-algebras algebraize an extension
 category:
   name: TODO           # models of linear explicit substitutions
   free_object: syntactic model of the linear λ-calculus modulo βη
@@ -29,7 +29,7 @@ correspondence:
   logic-type_theory:    { status: isomorphism }
   type_theory-category: { status: equivalence }
   category-algebra:     { status: TODO }
-  logic-algebra:        { status: TODO }
+  logic-algebra:        { status: partial }
 ---
 
 # Implicational fragment of intuitionistic multiplicative linear logic
@@ -52,7 +52,7 @@ in which every variable occurs exactly once, and the equations β and η as in t
 
 ## Algebra
 
-A BCI-algebra is an algebra (A, →, 1) whose axioms are the algebraic forms of B, C and I together with the rule that x → y = 1 = y → x implies x = y [@iseki1966]. BCI-algebras form a quasivariety that is not a variety. Lineales are the ordered models of the full multiplicative fragment, and the ⊸,I parts of lineales give BCI-algebras.
+A BCI-algebra is an algebra (A, →, 1) whose axioms are the algebraic forms of B, C and I together with the quasi-identity that x → y = 1 = y → x implies x = y [@iseki1966]. BCI-algebras form a quasivariety that is not a variety. Although Iséki introduced them as the algebraic counterpart of BCI logic, Blok and Pigozzi proved that BCI logic itself is not algebraizable [@blokpigozzi1989, Theorem 5.9]. BCI-algebras are the equivalent algebraic semantics of the extension of BCI logic by the rule from α and β infer α → β, introduced by Kabziński [@kabzinski1983]. As with IMLL, the failure is of the original notion of algebraizability rather than of the logic, and lineales, whose ⊸,I parts give BCI-algebras, remain the natural ordered models.
 
 ## Category
 
@@ -60,7 +60,7 @@ Without a tensor, a context of linear hypotheses cannot be interpreted as a sing
 
 ## Correspondence
 
-All four facets exist. Between logic and type theory the Curry–Howard isomorphism is a bijection between linear natural-deduction proofs and linear terms. Between type theory and category, the models of Ghani, de Paiva and Ritter are sound and complete. Between logic and algebra the logic is sound and complete for BCI-algebras, and the map between category and algebra should be the posetal reflection, as in the intuitionistic case.
+Three of the four maps are as strong as in the intuitionistic case. Between logic and type theory the Curry–Howard isomorphism is a bijection between linear natural-deduction proofs and linear terms. Between type theory and category, the models of Ghani, de Paiva and Ritter are sound and complete. Between logic and algebra the correspondence is partial: BCI logic is not algebraizable in the sense of Blok and Pigozzi, and BCI-algebras algebraize an extension of it. The map between category and algebra should be the posetal reflection, as in the intuitionistic case.
 
 ## References
 
