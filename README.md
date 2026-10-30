@@ -3,7 +3,9 @@
 ![cartoon 4 qudrivium](https://github.com/vcvpaiva/quadrivium/blob/main/The%20Curry%E2%80%93Howard%20correspondence.png)
 
 
-The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
+The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. 
+
+For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
 
 The atlas builds on two existing open resources. Logics and their proof systems are linked to the [Encyclopedia of Proof Systems](https://proofsystem.github.io/Encyclopedia/) (EPS) started by Bruno Woltzenlogel Paleo, and algebras to Peter Jipsen's [Categories, Algebras and Logics](https://github.com/jipsen/Algebras-and-Logics) database (CAL). Quadrivium adds the type-theoretic and categorical facets and the maps between all four.
 
