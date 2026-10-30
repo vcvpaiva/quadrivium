@@ -19,7 +19,7 @@ The paradigmatic case is [the implication–conjunction fragment of intuitionist
 
 ## Lab notes
 
-Some parts of the template carry more mathematics than an entry can explain, and the lab notes are where that mathematics is worked out. Each lab note takes one such issue, explains why it matters for the atlas and records what is known about it, so that entries can stay short and link to the note instead of repeating the discussion. The notes live in the [`LabNotes`]() directory. 
+Some parts of the template carry more mathematics than an entry can explain, and the lab notes are where that mathematics is worked out. Each lab note takes one such issue, explains why it matters for the atlas and records what is known about it, so that entries can stay short and link to the note instead of repeating the discussion. The notes live in the [`LabNotes`](https://github.com/vcvpaiva/quadrivium/tree/main/docs/LabNotes) directory. 
 
 The first one is about algebraizability: it explains why the linear fragments in the atlas are not algebraizable in the original sense of Blok and Pigozzi while their intuitionistic counterparts are, and why order algebraizability, which is the notion closest to categorical semantics, is the right one to record in the `logic-algebra` field.
 
