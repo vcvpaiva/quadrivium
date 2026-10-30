@@ -17,6 +17,12 @@ The `correspondence` block in the header records the four maps of the square, be
 
 The paradigmatic case is [the implication–conjunction fragment of intuitionistic propositional logic](entries/ipl-imp-conj.md), whose four facets are natural deduction, the simply typed λ-calculus with products, Brouwerian semilattices and cartesian closed categories, and where every map between them is as strong as one could ask. Entries are compared with each other in many directions, by taking fragments or extensions, by adding or dropping structural rules, and by adding or removing units, and the [index](INDEX.md) lists the entries together with these relations.
 
+## Lab notes
+
+Some parts of the template carry more mathematics than an entry can explain, and the lab notes are where that mathematics is worked out. Each lab note takes one such issue, explains why it matters for the atlas and records what is known about it, so that entries can stay short and link to the note instead of repeating the discussion. The notes live in the [`LabNotes`]() directory. 
+
+The first one is about algebraizability: it explains why the linear fragments in the atlas are not algebraizable in the original sense of Blok and Pigozzi while their intuitionistic counterparts are, and why order algebraizability, which is the notion closest to categorical semantics, is the right one to record in the `logic-algebra` field.
+
 ## Mathematics and references
 
 Mathematics is written in LaTeX between dollar signs and rendered with MathJax, with proof trees in `bussproofs` syntax. Markdown treats a backslash followed by punctuation as an escape, so `\,`, `\;`, `\{` and `\}` do not survive; use `\ `, `\quad`, `\lbrace` and `\rbrace` instead.
