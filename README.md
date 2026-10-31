@@ -9,6 +9,8 @@ For intuitionistic logic this picture is complete and traditional, and for linea
 
 The atlas builds on two existing open resources. Logics and their proof systems are linked to the [Encyclopedia of Proof Systems](https://proofsystem.github.io/Encyclopedia/) (EPS) started by Bruno Woltzenlogel Paleo, and algebras to Peter Jipsen's [Categories, Algebras and Logics](https://github.com/jipsen/Algebras-and-Logics) database (CAL). Quadrivium adds the type-theoretic and categorical facets and the maps between all four.
 
+The [introduction](INTRODUCTION.md) explains the mathematics behind the atlas, including the structural rules, and the [lab notes](docs/LabNotes/) work out the harder questions the entries raise.
+
 ## Entries
 
 Every entry is a Markdown file in `entries/`. It starts with a YAML header holding the structured data, followed by prose sections with the same names as the facets: Logic, Type theory, Algebra, Category and Correspondence. The header is the part that becomes the dataset, so it should say briefly what the prose says in full. The `EPS` and `CAL` fields hold the identifiers of the corresponding entries in those databases.
