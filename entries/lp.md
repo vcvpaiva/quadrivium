@@ -22,7 +22,7 @@ algebra:
   CAL: TODO
   kind: TODO
   algebraizable: open
-category:
+category_theory:
   name: Symmetric closed multicategories
   free_object: syntactic multicategory of the linear λ-calculus modulo βη and commuting conversions
 correspondence:
