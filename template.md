@@ -22,7 +22,7 @@ algebra:
   CAL: TODO            # identifier of the CAL entry, if there is one
   kind: TODO           # variety, quasivariety, ordered structures, ...
   algebraizable: TODO  # see LabNotes on algebraizability
-category:
+category_theory:
   name: TODO
   free_object: TODO
 correspondence:
