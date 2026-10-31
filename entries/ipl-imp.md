@@ -34,7 +34,7 @@ correspondence:
 
 # Implicational fragment of intuitionistic propositional logic
 
-The smallest fragment of IPL with a full Curry–Howard correspondence has implication as its only connective. It sits underneath [the implication–conjunction fragment](ipl-imp-conj.md), and removing conjunction changes the categorical facet more than the others: without product types, contexts can no longer be internalized as a single type, so the models are not simply cartesian closed categories.
+The implicational fragment of intuitionistic propositional logic has a full Curry–Howard correspondence with implication as its only connective. It sits underneath [the implication–conjunction fragment](ipl-imp-conj.md), and removing conjunction changes the categorical facet more than the others: without product types, contexts can no longer be internalized as a single type, so the models are not simply cartesian closed categories.
 
 ## Logic
 
@@ -44,8 +44,9 @@ $$
 A, B ::= p \mid A \to B
 $$
 
-where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the logical rules are
+where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the rules of natural deduction in sequent form are given in @fig-ipl-imp-nd.
 
+::: {#fig-ipl-imp-nd .rules}
 $$
 \begin{prooftree}
 \AxiomC{}
@@ -67,25 +68,80 @@ $$
 \end{prooftree}
 $$
 
-The [structural rules](https://github.com/vcvpaiva/quadrivium/blob/main/INTRODUCTION.md) of exchange, weakening, and contraction are all present.
+Natural deduction in sequent form for the implicational fragment of intuitionistic propositional logic.
+:::
 
-An equivalent Hilbert-style presentation has modus ponens as its only rule and two axiom schemes,
+All three [structural rules](https://github.com/vcvpaiva/quadrivium/blob/main/INTRODUCTION.md#structural-rules), exchange, weakening and contraction, hold. An equivalent Hilbert-style presentation, in @fig-ipl-imp-hilbert, has modus ponens as its only rule and two axiom schemes.
 
+::: {#fig-ipl-imp-hilbert .rules}
 $$
 \mathrm{K}\colon\ A \to (B \to A) \qquad \mathrm{S}\colon\ (A \to (B \to C)) \to ((A \to B) \to (A \to C))
 $$
 
-and the sequent calculus for the fragment has cut elimination. Full [intuitionistic propositional logic](ipl.md) is conservative over the fragment: a formula built from atoms with → alone is provable in IPL exactly when it is provable here.
+$$
+\begin{prooftree}
+\AxiomC{$A \to B$}
+\AxiomC{$A$}
+\RightLabel{$\mathrm{MP}$}
+\BinaryInfC{$B$}
+\end{prooftree}
+$$
+
+Hilbert-style presentation of the implicational fragment of intuitionistic propositional logic.
+:::
+
+The sequent calculus for the fragment has cut elimination. Full [intuitionistic propositional logic](ipl.md) is conservative over the fragment: a formula built from atoms with → alone is provable in IPL exactly when it is provable here.
 
 ## Type theory
 
-The Curry–Howard partner is the simply typed λ-calculus with function types only [@howard1980; @girardlafonttaylor1989, ch. 3], with terms
+The Curry–Howard partner of the fragment is the simply typed λ-calculus with function types only [@howard1980; @girardlafonttaylor1989, ch. 3]. Types and terms are given by
 
 $$
-M ::= x \mid \lambda x{:}A.\ M \mid M\ N
+A, B ::= p \mid A \to B \qquad M, N ::= x \mid \lambda x{:}A.\ M \mid M\ N
 $$
 
-and the equations β, (λx. M) N = M[N/x], and η, λx. (M x) = M when x is not free in M. The axioms K and S are the types of the combinators K and S, so the Hilbert system corresponds to combinatory logic. Reduction is strongly normalizing and confluent, and βη-equality is decided by β-normal η-long forms.
+so types are exactly the formulas of the logic. Typing judgements have the form Γ ⊢ M : A, where Γ is a list of typed variables x₁:A₁, …, xₙ:Aₙ with distinct variables, and the typing rules are in @fig-ipl-imp-typing. In these rules the context is shared between premises rather than split; because weakening and contraction hold, this presentation and the one in @fig-ipl-imp-nd prove the same sequents.
+
+::: {#fig-ipl-imp-typing .rules}
+$$
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\mathrm{Var}$}
+\UnaryInfC{$\Gamma, x{:}A \vdash x : A$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma, x{:}A \vdash M : B$}
+\RightLabel{$\to\mathrm{I}$}
+\UnaryInfC{$\Gamma \vdash \lambda x{:}A.\ M : A \to B$}
+\end{prooftree}
+\qquad
+\begin{prooftree}
+\AxiomC{$\Gamma \vdash M : A \to B$}
+\AxiomC{$\Gamma \vdash N : A$}
+\RightLabel{$\to\mathrm{E}$}
+\BinaryInfC{$\Gamma \vdash M\ N : B$}
+\end{prooftree}
+$$
+
+Typing rules for the simply typed λ-calculus with function types.
+:::
+
+The equations between terms are β and η, in @fig-ipl-imp-equations. Read from left to right, β is a reduction step, and a β-redex corresponds to a detour in a proof, an introduction of → immediately followed by its elimination.
+
+::: {#fig-ipl-imp-equations .rules}
+$$
+(\lambda x{:}A.\ M)\ N = M[N/x] \qquad (\beta)
+$$
+
+$$
+\lambda x{:}A.\ (M\ x) = M \quad \text{if } x \text{ is not free in } M \qquad (\eta)
+$$
+
+Equations for the simply typed λ-calculus with function types.
+:::
+
+Reduction is strongly normalizing and confluent, and βη-equality is decided by computing β-normal η-long forms. The axioms K and S of the Hilbert system are the types of the combinators K = λx.λy.x and S = λx.λy.λz.(x z)(y z), so the Hilbert system corresponds to combinatory logic.
 
 ## Algebra
 
