@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Quadrivium: a Curry–Howard Atlas"
+  navbar:
+    left:
+      - href: README.md
+        text: Home
+      - href: INTRODUCTION.md
+        text: Introduction
+      - href: INDEX.md
+        text: Index
+
+format:
+  html:
+    css: styles.css
+    html-math-method: mathjax
+    toc: true
