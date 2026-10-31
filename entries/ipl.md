@@ -22,7 +22,7 @@ algebra:
   CAL: TODO            # CAL entry for Heyting algebras
   kind: variety
   algebraizable: yes
-category:
+category_theory:
   name: Bicartesian closed categories
   free_object: syntactic category of the λ-calculus with sums modulo βη
 correspondence:
