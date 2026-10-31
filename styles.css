@@ -1,0 +1,11 @@
+.rules {
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 0.75em 1em;
+  margin: 1.5em 0;
+}
+.rules figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5em;
+}
