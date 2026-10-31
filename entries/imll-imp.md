@@ -22,7 +22,7 @@ algebra:
   CAL: TODO
   kind: quasivariety
   algebraizable: no      # Blok–Pigozzi 1989, Theorem 5.9; BCI-algebras algebraize an extension
-category:
+category_theory:
   name: TODO           # models of linear explicit substitutions
   free_object: syntactic model of the linear λ-calculus modulo βη
 correspondence:
