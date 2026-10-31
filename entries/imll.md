@@ -22,7 +22,7 @@ algebra:
   CAL: TODO            # CAL entry for commutative residuated pomonoids
   kind: TODO           # ordered structures; not obviously a variety without meets
   algebraizable: open
-category:
+category_theory:
   name: Symmetric monoidal closed categories
   free_object: syntactic category of the linear λ-calculus modulo βη and commuting conversions
 correspondence:
