@@ -9,3 +9,8 @@
   text-align: center;
   margin-top: 0.5em;
 }
+
+table td:first-child,
+table th:first-child {
+  white-space: nowrap;
+}
