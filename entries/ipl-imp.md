@@ -49,16 +49,16 @@ where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with �
 ::: {#fig-ipl-imp-typing .rules}
 
 $$
-\dfrac{}{\Gamma, x{:}A \vdash x : A}\ (\mathrm{Var})
+\dfrac{}{\Gamma, A \vdash  A}\ (\mathrm{Var})
 $$
 
 $$
-\dfrac{\Gamma, x{:}A \vdash M : B}{\Gamma \vdash \lambda x{:}A.\ M : A \to B}\ (\to\mathrm{I})
+\dfrac{\Gamma, A \vdash B}{\Gamma \vdash  A \to B}\ (\to\mathrm{I})
 \qquad
-\dfrac{\Gamma \vdash M : A \to B \qquad \Gamma \vdash N : A}{\Gamma \vdash M\ N : B}\ (\to\mathrm{E})
+\dfrac{\Gamma \vdash A \to B \qquad \Gamma \vdash A}{\Gamma \vdash  B}\ (\to\mathrm{E})
 $$
 
-Typing rules for the simply typed λ-calculus with function types.
+ND rules for the implicational fragment of intuitionistic propositional logic.
 
 :::
 
@@ -98,24 +98,13 @@ so types are exactly the formulas of the logic. Typing judgements have the form 
 ::: {#fig-ipl-imp-typing .rules}
 
 $$
-\begin{prooftree}
-\AxiomC{}
-\RightLabel{$\mathrm{Var}$}
-\UnaryInfC{$\Gamma, x{:}A \vdash x : A$}
-\end{prooftree}
+\dfrac{}{\Gamma, x{:}A \vdash x : A}\ (\mathrm{Var})
+$$
+
+$$
+\dfrac{\Gamma, x{:}A \vdash M : B}{\Gamma \vdash \lambda x{:}A.\ M : A \to B}\ (\to\mathrm{I})
 \qquad
-\begin{prooftree}
-\AxiomC{$\Gamma, x{:}A \vdash M : B$}
-\RightLabel{$\to\mathrm{I}$}
-\UnaryInfC{$\Gamma \vdash \lambda x{:}A.\ M : A \to B$}
-\end{prooftree}
-\qquad
-\begin{prooftree}
-\AxiomC{$\Gamma \vdash M : A \to B$}
-\AxiomC{$\Gamma \vdash N : A$}
-\RightLabel{$\to\mathrm{E}$}
-\BinaryInfC{$\Gamma \vdash M\ N : B$}
-\end{prooftree}
+\dfrac{\Gamma \vdash M : A \to B \qquad \Gamma \vdash N : A}{\Gamma \vdash M\ N : B}\ (\to\mathrm{E})
 $$
 
 Typing rules for the simply typed λ-calculus with function types.
