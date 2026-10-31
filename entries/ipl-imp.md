@@ -22,7 +22,7 @@ algebra:
   CAL: TODO
   kind: variety
   algebraizable: yes
-category:
+category_theory:
   name: TODO           # Jacobs' models for the →-only calculus
   free_object: syntactic model of the λ-calculus modulo βη
 correspondence:
