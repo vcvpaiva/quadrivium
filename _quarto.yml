@@ -1,3 +1,5 @@
+bibliography: references.bib
+
 project:
   type: website
   output-dir: _site
