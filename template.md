@@ -3,7 +3,7 @@ id: TODO               # short lowercase name, also the file name: entries/<id>.
 name: TODO             # full name of the logic
 short: TODO            # abbreviation used in the index, e.g. IPL(→)
 status: TODO           # one line summarising the correspondence
-bibliography: ../references.bib
+
 logic:
   name: TODO
   EPS: TODO            # identifier of the EPS entry, if there is one
