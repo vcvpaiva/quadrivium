@@ -46,7 +46,7 @@ $$
 
 where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the rules of natural deduction in sequent form are given in @fig-ipl-imp-nd.
 
-::: {#fig-ipl-imp-typing .rules}
+::: {#fig-ipl-imp-nd}
 
 $$
 \dfrac{}{\Gamma, A \vdash  A}\ (\mathrm{Var})
