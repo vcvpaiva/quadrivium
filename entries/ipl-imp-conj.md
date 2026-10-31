@@ -22,7 +22,7 @@ algebra:
   CAL: TODO            # CAL entry for Brouwerian semilattices
   kind: variety
   algebraizable: yes
-category:
+category_theory:
   name: Cartesian closed categories
   free_object: syntactic category of the λ-calculus modulo βη
 correspondence:
