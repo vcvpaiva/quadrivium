@@ -46,30 +46,19 @@ $$
 
 where p ranges over propositional atoms. Sequents have the form Γ ⊢ A, with Γ a finite list of formulas, and the rules of natural deduction in sequent form are given in @fig-ipl-imp-nd.
 
-::: {#fig-ipl-imp-nd .rules}
+::: {#fig-ipl-imp-typing .rules}
 
 $$
-\begin{prooftree}
-\AxiomC{}
-\RightLabel{$\mathrm{Ax}$}
-\UnaryInfC{$A \vdash A$}
-\end{prooftree}
-\qquad
-\begin{prooftree}
-\AxiomC{$\Gamma, A \vdash B$}
-\RightLabel{$\to\mathrm{I}$}
-\UnaryInfC{$\Gamma \vdash A \to B$}
-\end{prooftree}
-\qquad
-\begin{prooftree}
-\AxiomC{$\Gamma \vdash A \to B$}
-\AxiomC{$\Delta \vdash A$}
-\RightLabel{$\to\mathrm{E}$}
-\BinaryInfC{$\Gamma, \Delta \vdash B$}
-\end{prooftree}
+\dfrac{}{\Gamma, x{:}A \vdash x : A}\ (\mathrm{Var})
 $$
 
-Natural deduction in sequent form for the implicational fragment of intuitionistic propositional logic.
+$$
+\dfrac{\Gamma, x{:}A \vdash M : B}{\Gamma \vdash \lambda x{:}A.\ M : A \to B}\ (\to\mathrm{I})
+\qquad
+\dfrac{\Gamma \vdash M : A \to B \qquad \Gamma \vdash N : A}{\Gamma \vdash M\ N : B}\ (\to\mathrm{E})
+$$
+
+Typing rules for the simply typed λ-calculus with function types.
 
 :::
 
