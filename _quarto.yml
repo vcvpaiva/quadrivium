@@ -14,6 +14,9 @@ website:
         text: Introduction
       - href: INDEX.md
         text: Index
+    right:
+      - icon: github
+        href: https://github.com/vcvpaiva/quadrivium   
 
 format:
   html:
