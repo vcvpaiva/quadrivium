@@ -1,5 +1,7 @@
 # Quadrivium: a Curry–Howard Atlas
 
+The atlas is also published as a website at https://vcvpaiva.github.io/quadrivium/, where the entries are shown with their rules boxed and their references formatted.
+
 ![cartoon 4 qudrivium](https://github.com/vcvpaiva/quadrivium/blob/main/The%20Curry%E2%80%93Howard%20correspondence.png)
 
 
