@@ -8,7 +8,7 @@ website:
   title: "Quadrivium: a Curry–Howard Atlas"
   navbar:
     left:
-      - href: README.md
+      - href: index.md
         text: Home
       - href: INTRODUCTION.md
         text: Introduction
