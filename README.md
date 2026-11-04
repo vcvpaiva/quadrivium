@@ -2,7 +2,7 @@
 
 The atlas is also published as a website at https://vcvpaiva.github.io/quadrivium/, where the entries are shown with their rules boxed and their references formatted.
 
-![cartoon 4 qudrivium](https://github.com/vcvpaiva/quadrivium/blob/main/The%20Curry%E2%80%93Howard%20correspondence.png)
+![The Curry–Howard correspondence](curry-howard.png)
 
 
 The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. 
