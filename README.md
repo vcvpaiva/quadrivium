@@ -7,11 +7,14 @@ The atlas is also published as a website at https://vcvpaiva.github.io/quadriviu
 
 The Curry–Howard correspondence says that proofs are programs and propositions are types, and the Lawvere/Lambek part of the story adds that both are morphisms and objects of a suitable category. 
 
-For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics people actually study nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets, the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
+For intuitionistic logic this picture is complete and traditional, and for linear logic it is well developed, but for most of the logics nobody has written down which parts of it hold. Quadrivium is an atlas of such cases. Each entry takes one logic and records its four facets/legs: the logic, the type theory, the algebra and the category, together with how strong the connection between each pair of facets is.
 
-The atlas builds on two existing open resources. Logics and their proof systems are linked to the [Encyclopedia of Proof Systems](https://proofsystem.github.io/Encyclopedia/) (EPS) started by Bruno Woltzenlogel Paleo, and algebras to Peter Jipsen's [Categories, Algebras and Logics](https://github.com/jipsen/Algebras-and-Logics) database (CAL). Quadrivium adds the type-theoretic and categorical facets and the maps between all four.
+The atlas hopes to build on two existing open resources. 
+* Logics and their proof systems are linked to the [Encyclopedia of Proof Systems](https://proofsystem.github.io/Encyclopedia/) (EPS) started by Bruno Woltzenlogel Paleo,
+* Algebras are linked to Peter Jipsen's [Categories, Algebras and Logics](https://github.com/jipsen/Algebras-and-Logics) database (CAL).
+Quadrivium adds the type-theoretic and categorical facets and the maps between all four.
 
-The [introduction](INTRODUCTION.md) explains the mathematics behind the atlas, including the structural rules, and the [lab notes](docs/LabNotes/) work out the harder questions the entries raise.
+The [introduction](INTRODUCTION.md) explains some of the mathematics behind the atlas, including the structural rules, and the [lab notes](docs/LabNotes/) work out the harder questions the entries raise.
 
 ## Entries
 
