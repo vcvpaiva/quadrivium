@@ -20,9 +20,11 @@ The [introduction](INTRODUCTION.md) explains some of the mathematics behind the 
 
 Every entry is a Markdown file in `entries/`. It starts with a YAML header holding the structured data, followed by prose sections with the same names as the facets: Logic, Type theory, Algebra, Category and Correspondence. The header is the part that becomes the dataset, so it should say briefly what the prose says in full. The `EPS` and `CAL` fields hold the identifiers of the corresponding entries in those databases.
 
-The `correspondence` block in the header records the four maps of the square, between logic and type theory, type theory and category, category and algebra, and logic and algebra. Each map gets a status, such as `isomorphism`, `equivalence`, `posetal-reflection`, `algebraizable`, `partial`, `open` or `none`. An entry may leave facets or maps as `open`; an honest gap is data, and it is exactly what the atlas exists to find.
+The `correspondence` block in the header records the four maps of the square, between logic and type theory, type theory and category, category and algebra, and logic and algebra. Each map gets a status, such as `isomorphism`, `equivalence`, `posetal-reflection`, `algebraizable`, `partial`, `open` or `none`. An entry may leave facets or maps as `open`.
 
-The paradigmatic case is [the implication–conjunction fragment of intuitionistic propositional logic](entries/ipl-imp-conj.md), whose four facets are natural deduction, the simply typed λ-calculus with products, Brouwerian semilattices and cartesian closed categories, and where every map between them is as strong as one could ask. Entries are compared with each other in many directions, by taking fragments or extensions, by adding or dropping structural rules, and by adding or removing units, and the [index](INDEX.md) lists the entries together with these relations.
+The paradigmatic case is [the implication–conjunction fragment of intuitionistic propositional logic](entries/ipl-imp-conj.md), whose four facets are natural deduction, the simply typed λ-calculus with products, Brouwerian semilattices and cartesian closed categories, and where every map between them is as strong as one could ask. 
+
+Entries are compared with each other in many directions, by taking fragments or extensions, by adding or dropping structural rules, and by adding or removing units, and the [index](INDEX.md) lists the entries together with these relations.
 
 ## Lab notes
 
